@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href={{url_for('static', filename='styles.css') }} />
+    <title></title>
+</head>
+<body>
+    <script>
+        function myFunction(imgs) {
+            // Get the expanded image
+            var expandImg = document.getElementById("expandedImg");
+            // Get the image text
+            var imgText = document.getElementById("imgtext");
+            // Use the same src in the expanded image as the image being clicked on from the grid
+            expandImg.src = imgs.src;
+            // Use the value of the alt attribute of the clickable image as text inside the expanded image
+            imgText.innerHTML = imgs.alt;
+            // Show the container element (hidden with CSS)
+            expandImg.parentElement.style.display = "block";
+        }
+    </script>
+    <div class="scroll-container">
+        <img src="static/abstract1.jpg" alt="Snow" onclick="myFunction(this);" style="object-fit:scale-down;">
+        <img src="static/abstract2.jpg" alt="Mountains" onclick="myFunction(this);">
+        <img src="static/abstract3.jpg" alt="Lights" onclick="myFunction(this);">
+        <img src="static/abstract4.jpg" alt="Mountains" onclick="myFunction(this);">
+    </div>
+
+    <!-- The expanding image container -->
+    <div class="container">
+        <!-- Close the image -->
+        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+        <!-- Expanded image -->
+        <img id="expandedImg">
+
+        <!-- Image text -->
+        <div id="imgtext"></div>
+    </div>
+</body>
+</html>
