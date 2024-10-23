@@ -6,3 +6,6 @@ Develop a regression model to predict vertebral column lengths based on an incom
 Front End: Justin Eugene, Kassandra Harner
 
 Back End: Will Steinhart, Yousseff Botros, Haoyuan Wang, Priyanka
+
+
+I love money, and ppower
