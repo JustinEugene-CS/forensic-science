@@ -3,6 +3,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
+
     <link rel="stylesheet" href={{url_for('static', filename='styles.css') }} />
     <title></title>
 </head>
@@ -22,16 +23,21 @@
             var expandImg = document.getElementById("expandedImg");
             // Get the image text
             var imgText = document.getElementById("imgtext");
+
+            //var imageDiscription = document.getElementById("imageDiscription");
             // Use the same src in the expanded image as the image being clicked on from the grid
             expandImg.src = imgs.src;
             // Use the value of the alt attribute of the clickable image as text inside the expanded image
             imgText.innerHTML = imgs.alt;
+
+            //imageDiscription.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+            
             // Show the container element (hidden with CSS)
             expandImg.parentElement.style.display = "block";
         }
     </script>
     <div class="scroll-container">
-        <img src="static/abstract1.jpg" alt="Snow" onclick="myFunction(this);" style="object-fit:scale-down;">
+        <img src="static/abstract1.jpg" alt="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." onclick="myFunction(this);" style="object-fit:scale-down;">
         <img src="static/abstract2.jpg" alt="Mountains" onclick="myFunction(this);">
         <img src="static/abstract3.jpg" alt="Lights" onclick="myFunction(this);">
         <img src="static/abstract4.jpg" alt="Mountains" onclick="myFunction(this);">
@@ -43,8 +49,10 @@
         <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
 
         <!-- Expanded image -->
-        <img id="expandedImg">
+        <div id="trying">
 
+        </div>
+        <img id="expandedImg">
         <!-- Image text -->
         <div id="imgtext"></div>
     </div>

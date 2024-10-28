@@ -1,7 +1,7 @@
 /* styles.css */
 
 /*fonts used: Rubik for header Poppins for Body*/
-.rubik-<uniquifier > {
+.rubik {
     font-family: "Rubik", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
@@ -27,12 +27,17 @@ body {
 }
 /*contains header and nav bar*/
 #head {
+    margin-top: 25px;
+    margin-bottom: 30px;
     background-color: #4CAF50;
     color: white;
     padding: 40px;
     margin-left: -10px;
     margin-right: -10px;
     outline: 5px solid black;
+}
+.imageBox {
+    display: inline-block;
 }
 header {
     font-size: 70px;
@@ -195,13 +200,28 @@ div.scroll-container img {
 }
 /* Expanding image text */
 #imgtext {
-    position: absolute;
-    bottom: 15px;
-    left: 15px;
+    float: right;
+    width: 45%;
+    height: 100%;
+    margin-top: 3%;
+    margin-right: 3%;
+    margin-bottom: 3%;
     color: white;
     font-size: 20px;
+    font-family: Poppins;
 }
-
+#imageDiscription {
+    color: red;
+    display: inline-block;
+    outline: 2.5px solid white;
+    width: auto;
+    height: auto;
+    float: right;
+    margin-right: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    text-align: center;
+}
 /* Closable button inside the image */
 .closebtn {
     position: absolute;
