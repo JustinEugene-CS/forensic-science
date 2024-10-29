@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/a84d8a8724.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href={{url_for('static', filename='styles.css') }} />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,8 +19,8 @@
         <header>Testing!</header>
         <nav>
             <ul>
-                <li><a href={{ url_for('about') }}>About Page</a></li>
-                <li><a href={{ url_for('index') }}>Predict</a></li>
+                <li><i class="fa-solid fa-circle-info"></i><a href={{ url_for('about') }}>About Page</a></li>
+                <li><i class="fa-solid fa-chart-line"></i><a href={{ url_for('index') }}>Predict</a></li>
             </ul>
         </nav>
     </div>

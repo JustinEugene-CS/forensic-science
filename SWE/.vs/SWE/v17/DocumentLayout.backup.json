@@ -30,8 +30,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 203,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -40,7 +44,7 @@
               "RelativeDocumentMoniker": "templates\\about.html",
               "ToolTip": "C:\\Users\\kdhan\\OneDrive\\Documents\\GitHub\\forensic-science\\SWE\\templates\\about.html",
               "RelativeToolTip": "templates\\about.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2024-10-22T03:54:20.009Z",
               "EditorCaption": ""
@@ -70,10 +74,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
               "WhenOpened": "2024-10-17T01:41:27.738Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             }
           ]
         },
@@ -101,7 +101,7 @@
               "RelativeDocumentMoniker": "static\\styles.css",
               "ToolTip": "C:\\Users\\kdhan\\OneDrive\\Documents\\GitHub\\forensic-science\\SWE\\static\\styles.css",
               "RelativeToolTip": "static\\styles.css",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAAAL4AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAKgAAAAAAAAAAAAAANIAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2024-10-17T01:51:24.987Z",
               "EditorCaption": ""

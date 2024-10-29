@@ -52,6 +52,11 @@ header {
 h1 {
     text-align: center;
 }
+i {
+    padding-left: 8px;
+    padding-right: 8px;
+    
+}
 /*nav bar*/
 nav ul {
     list-style-type: none;

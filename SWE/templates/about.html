@@ -1,5 +1,11 @@
 ﻿<!DOCTYPE html>
-
+<script src="https://kit.fontawesome.com/a84d8a8724.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
@@ -12,8 +18,8 @@
         <header>About</header>
         <nav>
             <ul>
-                <li><a href={{ url_for('about') }}>About Page</a></li>
-                <li><a href={{ url_for('index') }}>Predict</a></li>
+                <li><i class="fa-solid fa-circle-info"></i><a href={{ url_for('about') }}>About Page</a></li>
+                <li><i class="fa-solid fa-chart-line"></i><a href={{ url_for('index') }}>Predict</a></li>
             </ul>
         </nav>
     </div>
@@ -31,7 +37,7 @@
             imgText.innerHTML = imgs.alt;
 
             //imageDiscription.innerHTML = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
-            
+
             // Show the container element (hidden with CSS)
             expandImg.parentElement.style.display = "block";
         }
