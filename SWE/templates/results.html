@@ -79,5 +79,20 @@
             <p>© 2024 Vertebrae Prediction Tool. All rights reserved.</p>
         </footer>
     </div>
+
+    /* JavaScript to set --container-height dynamically */
+    <script>
+        function updateContainerHeight() {
+            const container = document.querySelector('.container');
+            if (container) {
+                const height = container.offsetHeight;
+                container.style.setProperty('--container-height', `${height}px`);
+            }
+        }
+    
+        // Update the height dynamically
+        window.addEventListener('resize', updateContainerHeight);
+        document.addEventListener('DOMContentLoaded', updateContainerHeight);
+    </script>
 </body>
 </html>
