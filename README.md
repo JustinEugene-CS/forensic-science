@@ -6,3 +6,11 @@ Develop a regression model to predict vertebral column lengths based on an incom
 Front End: Justin Eugene, Kassandra Harner, William Steinhart
 
 Back End: Yousseff Botros, Haoyuan Wang, Priyanka
+
+## How to run
+
+Using Visual Studio,
+Go to the SWE folder
+and run app.py
+after installing everything 
+needed from requirements.txt
